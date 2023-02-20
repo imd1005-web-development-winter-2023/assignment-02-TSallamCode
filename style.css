@@ -25,7 +25,7 @@
   margin-top: 15vh;
   height: 60vh;
   width: 45vw;
-  grid-template-columns: 3vw 13vw 13vw 1fr;
+  grid-template-columns: 3vw 12vw 12vw 1fr;
   grid-template-rows: 18vh 18vh 14vh 10vh;
 }
 
@@ -49,7 +49,7 @@ h1 {
   background-color: black;
   font-family: "alternate-gothic-no-3-d", sans-serif;
   font-size: 2vw;
-  font-weight: bold;
+  font-weight: medium;
   color: white;
   letter-spacing: .1vw;
   line-height: 100%;
@@ -87,6 +87,14 @@ h1 {
 
 .socials-container {
   margin: auto;
+  margin-top: 1vh;
+  display: flex;
+  gap: 3vw;
   grid-row: 4 / span 1;
   grid-column: 2 / span 2;
+}
+
+.socials-container a {
+  width: 2.5vw;
+  opacity: .5;
 }
