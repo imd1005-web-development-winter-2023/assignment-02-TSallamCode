@@ -8,14 +8,14 @@
 
 .nav-bar a {
   font-family: "alternate-gothic-no-3-d", sans-serif;
-  font-size: 2vw;
+  font-size: 1.75vw;
   text-decoration-line: none;
   color: black;
 }
 
 .nav-bar #logo {
-  width: 4vw;
-  margin-left: 4vw;
+  width: 3vw;
+  margin-left: 2vw;
   margin-right: 2vw;
 }
 
@@ -26,17 +26,25 @@
   height: 60vh;
   width: 45vw;
   grid-template-columns: 3vw 12vw 12vw 1fr;
-  grid-template-rows: 18vh 18vh 14vh 10vh;
+  grid-template-rows: 21vh 21vh 16vh 12vh 1fr;
 }
 
-h1 {
-  grid-row: 1 / span 2;
-  grid-column: 2 / span 3;
-  
+svg {
   font-family: "continuo", "sans-serif";
   font-size: 11vw;
-  line-height: 18vh;
-  vertical-align: text-top;
+  line-height: 21vh;
+}
+
+.firstN {
+  padding-top: 4vh;
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 3;
+}
+
+.lastN {
+  padding-top: 3.5vh;
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 3;
 }
 
 .button-default {
@@ -87,7 +95,7 @@ h1 {
 
 .socials-container {
   margin: auto;
-  margin-top: 1vh;
+  margin-top: 2vh;
   display: flex;
   gap: 3vw;
   grid-row: 4 / span 1;
@@ -97,4 +105,21 @@ h1 {
 .socials-container a {
   width: 2.5vw;
   opacity: .5;
+}
+
+.main-container p {
+  grid-row: 5 / span 1;
+  grid-column: 2 /span 2;
+  margin-top: 5vh;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+  font-size: 1.5vw;
+  line-height: 5vh;
+  letter-spacing: 0.15vw;
+}
+
+p mark {
+  background: transparent;
+  color: rgb(185, 0, 0);
 }
