@@ -1,9 +1,9 @@
 body {
   background-color: rgb(235, 217, 184);
-  background-image: url("img/Top_Triangle.svg");
-  background-size: 56%;
+  background-image: url("img/me.png");
   background-repeat: no-repeat;
-  background-image: none;
+  background-size: 150%;
+  background-position: 35vw -3vw;
 }
 
 .nav-bar {
