@@ -1,73 +1,97 @@
+body {
+  background-color: rgb(235, 217, 184);
+  background-image: url("img/Top_Triangle.svg");
+  background-size: 56%;
+  background-repeat: no-repeat;
+  background-image: none;
+}
+
 .nav-bar {
-  background-color: green;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
   display: flex;
   gap: 4vw;
   align-items: center;
-  height: 10vh;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
 }
 
 .nav-bar a {
   font-family: "alternate-gothic-no-3-d", sans-serif;
   font-size: 1.75vw;
   text-decoration-line: none;
-  color: black;
+  color: white;
+  transition: 0.75s;
+}
+
+.nav-bar a:hover {
+  color: rgb(185, 0, 0);
 }
 
 .nav-bar #logo {
-  width: 3vw;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  width: 1.75em;
+  margin-left: 1em;
+  margin-right: 0.5em;
 }
 
 .main-container {
+  align-items: center;
+  width: 60%;
   display: grid;
-  margin-left: 4vw;
-  margin-top: 15vh;
-  height: 60vh;
-  width: 45vw;
-  grid-template-columns: 3vw 12vw 12vw 1fr;
-  grid-template-rows: 21vh 21vh 16vh 12vh 1fr;
+  grid-template-rows: 16vw 11vw 11vw 5vw 1fr;
+  grid-template-columns: 5vw 0.5vw 0.5fr 0.5fr 1fr;
 }
 
-svg {
+.main-container .background {
+  align-self: start;
+  width: 100%;
+  grid-row: 1 / span 4;
+  grid-column: 1 / span 6;
+  margin-bottom: 0vw;
+}
+
+.name-container {
+  grid-row: 2 / span 2;
+  grid-column: 2 /span 4;
+  color: white;
+}
+
+.name {
   font-family: "continuo", "sans-serif";
-  font-size: 11vw;
-  line-height: 21vh;
+  font-size: 12vw;
+  line-height: 100%;
 }
 
-.firstN {
-  padding-top: 4vh;
-  grid-row: 1 / span 1;
-  grid-column: 2 / span 3;
-}
-
-.lastN {
-  padding-top: 3.5vh;
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 3;
+.button-container {
+  display: flex;
+  grid-row: 4 / span 1;
+  grid-column: 3 /span 2;
+  flex-direction: row;
+  gap: 3vw;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  margin-top: 6vw;
 }
 
 .button-default {
-  margin: auto;
-  border-radius: 2vw 2vw 2vw 2vw;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  padding-top: .4vw;
-  padding-bottom: .3vw;
   background-color: black;
   font-family: "alternate-gothic-no-3-d", sans-serif;
   font-size: 2vw;
-  font-weight: medium;
   color: white;
-  letter-spacing: .1vw;
-  line-height: 100%;
-  text-align: center;
+  letter-spacing: .15vw;
   text-decoration: none;
-  border: .5vh solid black;
-
-  box-shadow: 2px 6px 7px 0px rgba(0, 0, 0, 0.15);
-
-  transition: 1s;
+  text-align: center;
+  padding: 4%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  border: .2vw solid black;
+  border-radius: 2vw;
+  line-height: 50%;
+  transition: 0.75s;
 }
 
 .button-default:hover {
@@ -76,41 +100,40 @@ svg {
 }
 
 .reel-button {
-  grid-row: 3 / span 1;
-  grid-column: 2 / span 1;
-  margin-left: 0px;
-  border-top-left-radius: .5vw;
-
-  transition: 0.75s;
+  border-top-left-radius: 0.5vw;
 }
 
 .portfolio-button {
-  grid-row: 3 / span 1;
-  grid-column: 3 / span 1;
-  margin-right: 0px;
   background-color: white;
   color: rgb(185, 0, 0);
-  box-shadow: inset -2px 6px 7px 0px rgba(0, 0, 0, 0.15);
 }
 
 .socials-container {
-  margin: auto;
-  margin-top: 2vh;
+  margin-top: 7vw;
+  grid-row: 5 / span 1;
+  grid-column: 3 /span 2;
+  align-items: center;
+  justify-content: center;
   display: flex;
-  gap: 3vw;
-  grid-row: 4 / span 1;
-  grid-column: 2 / span 2;
+  gap: 4vw;
+  height: 2vw;
 }
 
-.socials-container a {
-  width: 2.5vw;
-  opacity: .5;
+.socials-container a img{
+  opacity: 0.5;
+  height: 2vw;
+  transition: 0.75s;
+}
+
+.socials-container a img:hover {
+  height: 3vw;
+  opacity: .7;
 }
 
 .main-container p {
-  grid-row: 5 / span 1;
+  grid-row: 6 / span 1;
   grid-column: 2 /span 2;
-  margin-top: 5vh;
+  margin-top: 5vw;
   padding-right: 2vw;
   padding-left: 2vw;
   font-family: "alternate-gothic-no-3-d", sans-serif;
