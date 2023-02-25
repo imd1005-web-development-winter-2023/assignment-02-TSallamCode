@@ -304,8 +304,7 @@ p mark {
   margin-left: 5vw;
   width: 12vw;
   height: 12vw;
-  object-fit: none;
-  object-position: -4.5vw 0vw;
+  object-fit: cover;
   scale: 150%;
   border-radius: 100%;
   grid-row: 1 /span 3;
