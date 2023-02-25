@@ -279,7 +279,6 @@ p mark {
   grid-template-rows: 15vw 1fr;
   margin-top: -28vw;
   margin-left: 5vw;
-  grid-column: 1fr;
 }
 
 .about-container h5 {
@@ -294,18 +293,17 @@ p mark {
   margin-top: 5vw;
   grid-row-start: 2;
   display: grid;
-  grid-template-rows: 8vw 8w 8vw 20vw;
-  grid-template-columns: 24vw 30vw 1fr;
+  grid-template-rows: 6vw 6vw 6vw 1fr;
+  grid-template-columns: 24vw 34vw 1fr;
   width: 100%;
+  justify-items: center;
 }
 
 .profile-container .photo {
-  margin-top: 3vw;
   margin-left: 5vw;
-  width: 12vw;
-  height: 12vw;
+  width: 18vw;
+  height: 18vw;
   object-fit: cover;
-  scale: 150%;
   border-radius: 100%;
   grid-row: 1 /span 3;
   grid-column: 1/ span 1;
@@ -324,7 +322,6 @@ p mark {
 }
 
 .about-msg {
-  margin-top: -2vw;
   font-size: 3vw;
   grid-row: 2 / span 1;
 }
@@ -346,7 +343,7 @@ p mark {
 }
 
 .about-info {
-  margin-top: 4vw;
+  margin-top: 2vw;
   grid-row: 4 / span 1;
   grid-column: 1 / span 2;
   font-family: "antonia-variable", sans-serif;
@@ -422,7 +419,7 @@ form ul li {
 }
 
 footer {
-  margin-top: 5vw;
+  margin-top: 4vw;
   background-color: black;
   width: 100%;
   height: 10vw;
