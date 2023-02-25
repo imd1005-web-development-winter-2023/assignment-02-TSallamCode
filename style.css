@@ -1,3 +1,4 @@
+/* Body basic styling */
 body {
   background-color: rgb(235, 217, 184);
   background-image: url("img/me.png");
@@ -6,6 +7,7 @@ body {
   background-position: 30vw 3vw;
 }
 
+/* navigation bar styling (FLEXBOX) */
 .nav-bar {
   background-color: black;
   position: fixed;
@@ -20,6 +22,7 @@ body {
   padding-left: 1%;
 }
 
+/* navigation bar links styling */
 .nav-bar a {
   font-family: "alternate-gothic-no-3-d", sans-serif;
   font-size: 1.75vw;
@@ -28,16 +31,19 @@ body {
   transition: 0.75s;
 }
 
+/* navigation bar links (hover) styling */
 .nav-bar a:hover {
   color: rgb(185, 0, 0);
 }
 
+/* navigation bar logo styling */
 .nav-bar #logo {
   width: 1.75em;
   margin-left: 1em;
   margin-right: 0.5em;
 }
 
+/* main container styling (CSS GRID) - so i can overlap svg and text */
 .main-container {
   align-items: center;
   width: 60%;
@@ -46,6 +52,7 @@ body {
   grid-template-columns: 5vw 0.5vw 0.5fr 0.5fr 1fr;
 }
 
+/* main container background SVG styling - styling for the triangle in the top right of page */
 .main-container .background {
   align-self: start;
   width: 100%;
@@ -54,20 +61,23 @@ body {
   margin-bottom: 0vw;
 }
 
+/* main container Full Name CONTAINER placement */
 .name-container {
   grid-row: 2 / span 2;
   grid-column: 2 /span 4;
-  color: white;
 }
 
+/* main container FULL NAME Styling */
 .name {
   font-family: "milka-soft", sans-serif;
   font-size: 12vw;
   font-weight: 600;
   letter-spacing: 0.5vw;
   line-height: 130%;
+  color: white;
 }
 
+/* main container BUTTONS CONTAINER placement (FLEXBOX) */
 .button-container {
   display: flex;
   grid-row: 4 / span 1;
@@ -80,6 +90,7 @@ body {
   margin-top: 9vw;
 }
 
+/* main container BUTTONS generic styling */
 .button-default {
   background-color: black;
   font-family: "alternate-gothic-no-3-d", sans-serif;
@@ -97,20 +108,24 @@ body {
   transition: 0.75s;
 }
 
+/* main container BUTTONS (hover) styling */
 .button-default:hover {
   background-color:rgb(185, 0, 0);
   color: white;
 }
 
+/* individual demo reel button styling */
 .reel-button {
   border-top-left-radius: 0.5vw;
 }
 
+/* individual portfolio button styling */
 .portfolio-button {
   background-color: white;
   color: rgb(185, 0, 0);
 }
 
+/* main container SOCIALS CONTAINER placement (FLEXBOX) */
 .socials-container {
   margin-top: 7vw;
   grid-row: 5 / span 1;
@@ -122,17 +137,20 @@ body {
   height: 2vw;
 }
 
+/* main container SOCIALS styling */
 .socials-container a img{
   opacity: 0.5;
   height: 2vw;
   transition: 0.75s;
 }
 
+/* main container SOCIALS (hover) styling */
 .socials-container a img:hover {
   height: 3vw;
   opacity: .7;
 }
 
+/* main container PARAGRAPH STYLING */
 .main-container p {
   grid-row: 6 / span 1;
   grid-column: 3 /span 3;
@@ -146,11 +164,13 @@ body {
   transition: 0.75s;
 }
 
+/* main container PARAGRAPH HIGHLIGHTED Styling */
 p mark {
   background: transparent;
   color: rgb(185, 0, 0);
 }
 
+/* Portfolio Container Styling (CSS GRID) */
 .portfolio-container {
   margin-top: -15vw;
   display: grid;
@@ -158,12 +178,14 @@ p mark {
   grid-template-columns: 7vw 1fr 7vw;
 }
 
+/* portfolio container background SVG styling (the black background behind portfolio) */
 #portfolio-background {
   grid-row: 1 /span 3;
   grid-column: 1 /span 3;
   fill: black
 }
 
+/* portfolio container HEADER (TITLE) styling and placement */
 .portfolio-container h3 {
   color: rgb(185, 0, 0);
   font-family: "alternate-gothic-no-3-d", sans-serif;
@@ -173,6 +195,7 @@ p mark {
   grid-column: 2 /span 1;
 }
 
+/* gallery container (contains all gallery items) placement (CSS GRD) */
 .gallery-container {
   grid-row-start: 3;
   grid-column: 2 /span 1;
@@ -183,6 +206,7 @@ p mark {
   justify-items: center;
 }
 
+/* item container (contains a single item) placement (CSS GRID) */
 .item-container {
   width: 90%;
   height: 30vw; 
@@ -194,6 +218,7 @@ p mark {
   border-bottom-color: white;
 }
 
+/* item container - image container (defines the space an image can take up) placement */
 .item-container .image-container{
   width: 100%;
   height: 100%;
@@ -201,6 +226,7 @@ p mark {
   grid-column: 2/span 1;
 }
 
+/* image container IMAGE styling */
 .image-container img {
   width: 100%;
   height: 100%;
@@ -211,6 +237,7 @@ p mark {
   border-width: 0.2vw;
 }
 
+/* item container OVERLAY TEXT container placement (opacity default 0) */
 .item-container .text-container {
   width: 100%;
   height: 100%;
@@ -228,6 +255,7 @@ p mark {
   border-radius: 1vw 1vw;
 }
 
+/* item container OVERLAY TEXT styling */
 .text-container a{
   margin: auto;
   font-family: "alternate-gothic-no-3-d", sans-serif;
@@ -236,10 +264,12 @@ p mark {
   color: white;
 }
 
+/* item container OVERLAY TEXT (hover) */
 .text-container:hover {
   opacity: 85%;
 }
 
+/* item container TITLE styling */
 .item-container h4 {
   font-family: "alternate-gothic-no-3-d", sans-serif;
   font-size: 6vw;
@@ -251,6 +281,7 @@ p mark {
   transition: 0.75s;
 }
 
+/* item container DESCRIPTION styling */
 .item-container p {
   font-family: "antonia-variable", sans-serif;
   font-size: 1vw;
@@ -263,17 +294,21 @@ p mark {
   opacity: 75%;
   transition: 0.75s;
 }
+
+/* moves TITLE when hovering over OVERLAY TEXT */
 .text-container:hover + h4{
   margin-top: 46%;
   margin-left: 5%
 }
 
+/* moves DESCRIPTION when hovering over OVERLAY TEXT */
 .text-container:hover ~ p {
   margin-top: 16%;
   margin-left: 6%;
   margin-right: 19%;
 }
 
+/* ABOUT ME CONTAINER (CSS GRID) */
 .about-container {
   display: grid;
   grid-template-rows: 15vw 1fr;
@@ -281,6 +316,7 @@ p mark {
   margin-left: 5vw;
 }
 
+/* about me container TITLE styling */
 .about-container h5 {
   grid-row: 1 / span 1;
   color: white;
@@ -289,6 +325,7 @@ p mark {
   letter-spacing: 2vw;
 }
 
+/* about me container PROFILE CONTAINER (CSS GRID) */
 .profile-container{
   margin-top: 5vw;
   grid-row-start: 2;
@@ -299,6 +336,7 @@ p mark {
   justify-items: center;
 }
 
+/* profile container PHOTO styling */
 .profile-container .photo {
   margin-left: 5vw;
   width: 18vw;
@@ -309,6 +347,7 @@ p mark {
   grid-column: 1/ span 1;
 }
 
+/* profile container MESSAGES default stlying */
 .profile-container h6 {
   font-family: "alternate-gothic-no-3-d", sans-serif;
   letter-spacing: 0.2vw;
@@ -316,32 +355,38 @@ p mark {
   color: black;
 }
 
+/* profile container MESSAGE 1 (HELLO IM TAREK) styling */
 .about-title {
   font-size: 5vw;
   grid-row: 1 / span 1;
 }
 
+/* profile container MESSAGE 2 (NICE TO MEET YOU) styling */
 .about-msg {
   font-size: 3vw;
   grid-row: 2 / span 1;
 }
 
+/* Software Experience Logo container placement */
 .logos {
   grid-row: 3 / span 1;
   grid-column: 2 / span 1;
 }
 
+/* SOFTWARE EXPERIENCE LOGOS CONTAINER (FLEXBOX) */
 .logo-list {
   display: flex;
   gap: 2vw;
   margin-left: -1.5vw;
 }
 
+/* logos container IMAGE default styling */
 .logo-list img {
   height: 2.5vw;
   opacity: 0.4;
 }
 
+/* about me container description styling */
 .about-info {
   margin-top: 2vw;
   grid-row: 4 / span 1;
@@ -354,6 +399,7 @@ p mark {
   line-height: 200%;
 }
 
+/* Contact Form Container placement */
 .contact-form {
   grid-row: 4 /span 1;
   grid-column: 3 /span 1;
@@ -365,6 +411,7 @@ p mark {
   margin-top: 6vw;
 }
 
+/* Contact Form Title Styling */
 .contact-form h6{
   font-family: "alternate-gothic-no-3-d", sans-serif;
   font-size: 4vw;
@@ -373,20 +420,24 @@ p mark {
   margin-bottom: 4vw;
 }
 
+/* Contact form message styling */
 form ul li {
   font-family: "alternate-gothic-no-3-d", sans-serif;
   font-size: 2vw;
 }
 
+/* Contact form Container (CSS GRID) */
 .form-layout {
   display: grid;
   grid-template-rows: 5vw 5vw 17vw 5vw
 }
 
+/* Contact form LABEL styling */
 .label {
   margin-right: 1vw;
 }
 
+/* Contact form submit button styling */
 .submit-button {
   background-color: white;
   border-style: solid;
@@ -402,11 +453,13 @@ form ul li {
   transition: 0.75s;
 }
 
+/* Contact form submit button (hover) styling */
 .submit-button:hover {
   background-color: rgb(185, 0, 0);
   color: white;
 }
 
+/* Contact form input styling */
 .input {
   background-color: transparent;
   border-style: solid;
@@ -414,10 +467,12 @@ form ul li {
   padding-left: 1vw;
 }
 
+/* Contact form text area styling */
 .input.textarea {
   padding-left: 0.01vw;
 }
 
+/* FOOTER CONTAINER */
 footer {
   margin-top: 4vw;
   background-color: black;
@@ -426,6 +481,7 @@ footer {
   display: flex;
 }
 
+/*FOOTER CONTAINER INNER */
 footer div {
   margin:auto;
   display: grid;
@@ -434,12 +490,14 @@ footer div {
   grid-template-rows: 4vw 4vw;
 }
 
+/* FOOTER LOGO */
 #logofooter {
   width: 20%;
 }
 
+/* FOOTER LINKS CONTAINER (FLEXBOX) STYLING */
 .footer-links {
-  margin-top: 4vw;
+  margin-top: 2vw;
   width: 100%;
   grid-row: 2 / span 1;
   display: flex;
@@ -448,8 +506,17 @@ footer div {
   align-content: center;
 }
 
+/* FOOTER LINKS STLYING */
 .footer-links a {
   color: white;
   font-family: "alternate-gothic-no-3-d", sans-serif;
   font-size: 2vw;
+}
+
+/* FOOTER COPYRIGHT STYLING */
+footer div p {
+  font-family: "antonia-variable", sans-serif;
+  font-size: 0.75vw;
+  color: white;
+  margin-top: 3vw;
 }
