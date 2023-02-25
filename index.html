@@ -2,7 +2,7 @@
 <html lang="en-ca">
   <head>
     <!-- Set the page title -->
-    <title>Assignment 02</title>
+    <title>Tarek's Portfolio Site</title>
 
     <!-- Set the charset we're using to UTF-8 -->
     <meta charset="UTF-8" />
@@ -18,12 +18,250 @@
 
     <!-- This is where all of our awesome CSS code goes -->
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://use.typekit.net/qfg2jll.css">
+
   </head>
   <body>
-    <!--
+    <header>
+        
+      <nav>
 
-      YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
+        <ul>
+          <li class = "nav-bar">
+            <a id = "logo" href="#">
+              <img src = "img/my-logo.svg" alt = "Tarek Sallam">
+            </a>
 
-    -->
+            <a href="#">REEL</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">ABOUT ME</a>
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+
+      </nav>
+    </header>
+              
+    <!-- MAIN HERO SECTION -->
+    <main class = "main-container">
+
+      <!-- SVG IMAGE USED IN BACKGROUND - TRIANGLE AT TOP-->
+      <img class = "background" src = "img/top-triangle.svg" alt = "">
+
+      <!-- Container for my Full Name -->
+      <div class = "name-container">
+        <h2 class = "name">Tarek Sallam</h2>
+      </div>
+
+      <!-- Container for buttons -->
+      <div class = "button-container">
+        <a href ="#" class = "button-default reel-button">DEMO REEL</a>
+        <a href ="#" class = "button-default portfolio-button">PORTFOLIO</a>
+      </div>
+
+      <!-- Container for social icons -->
+      <div class = "socials-container">
+        <a href="#">
+          <img src="img/linked-in-logo.png" alt = "Linkedin">
+        </a>
+        <a href="#">
+          <img src="img/artstation-logo.png" alt = "Artstation">
+        </a>
+        <a href="#">
+          <img src="img/email-logo.png" alt = "Email">
+        </a>
+      </div>
+
+      <!-- Short paragraph section 1-->
+      <p>VFX TD FROM OTTAWA, CANADA CURRENTLY STUDYING INTERACTIVE MULTIMEDIA & DESIGN AT <mark>CARLETON UNIVERSITY</mark></p>
+
+    </main>  
+
+    <!-- CONTAINER FOR PORTFOLIO SECTION -->
+    <div class = "portfolio-container">
+
+      <!-- SVG definition to be used as background for portfolio section-->
+      <svg id = "portfolio-background" width = "100vw" height = "130vw" viewBox = "0 0 100 130">
+        <polygon points = "0,30 100,0 100,100, 0,115"></polygon>
+      </svg>
+
+      <!-- Header for section-->
+      <h3>portfolio</h3>
+
+      <!-- Container for the gallery-->
+      <div class = "gallery-container">
+
+        <!-- Container for a item 1 in the gallery-->
+        <div class = "item-container">
+
+          <!-- Container for image 1 of item 1 -->
+          <div class = "image-container">
+            <img src = "img/work-goes-here.png" alt ="Example Work">
+          </div>
+
+          <!-- Container for overlay of image 1 of item 1-->
+          <div class = "text-container">
+            <a href = "#">Explore More</a>
+          </div>
+
+          <!-- Title and description of item 1-->
+          <h4>ITEM TITLE</h4>  
+          <p>This is a very short description of this item. This item has been worked on for x days and is used for y things</p>
+        </div>
+
+        <!-- Container for a item 2 in the gallery-->
+        <div class = "item-container">
+
+          <!-- Container for image of item 2 -->
+          <div class = "image-container">
+            <img src = "img/work-goes-here.png" alt ="Example Work">
+          </div>
+
+          <!-- Container for overlay of image of item 2-->
+          <div class = "text-container">
+            <a href = "#">Explore More</a>
+          </div>
+
+          <!-- Title and description of item 2-->
+          <h4>ITEM TITLE</h4>  
+          <p>This is a very short description of this item. This item has been worked on for x days and is used for y things</p>
+        </div>
+
+        <!-- Container for a item 3 in the gallery-->
+        <div class = "item-container">
+
+          <!-- Container for image of item 3 -->
+          <div class = "image-container">
+            <img src = "img/work-goes-here.png" alt ="Example Work">
+          </div>
+
+          <!-- Container for overlay of image of item 3-->
+          <div class = "text-container">
+            <a href = "#">Explore More</a>
+          </div>
+
+          <!-- Title and description of item 3-->
+          <h4>ITEM TITLE</h4>  
+          <p>This is a very short description of this item. This item has been worked on for x days and is used for y things</p>
+        </div>
+
+        <!-- Container for a item 4 in the gallery-->
+        <div class = "item-container">
+
+          <!-- Container for image of item 4 -->
+          <div class = "image-container">
+            <img src = "img/work-goes-here.png" alt ="Example Work">
+          </div>
+
+          <!-- Container for overlay of image of item 4-->
+          <div class = "text-container">
+            <a href = "#">Explore More</a>
+          </div>
+
+          <!-- Title and description of item 4-->
+          <h4>ITEM TITLE</h4>  
+          <p>This is a very short description of this item. This item has been worked on for x days and is used for y things</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CONTAINER FOR ABOUT SECTION-->
+    <div class = "about-container">
+
+      <!-- HEADER FOR ABOUT-->
+      <h5>about me</h5>
+
+      <!-- Container for profile-->
+      <div class = "profile-container">
+
+        <!-- images and titles with header 6-->
+        <img src = "img/about-me.jpg" alt = "Profile Photo" class = "photo">
+        <h6 class = "about-title">Hello! I'm Tarek!</h6>
+        <h6 class = "about-msg">Nice to meet you!</h6>
+
+        <!-- List of logos (experienced software)-->
+        <ul class = "logos">
+          <li class = "logo-list">
+            <img src = "img/c-logo.png" alt ="C Logo">
+            <img src = "img/c++-logo.png" alt ="C++ Logo">
+            <img src = "img/python-logo.png" alt ="Python Logo">
+            <img src = "img/houdini-logo.png" alt ="Houdini Logo">
+            <img src = "img/photoshop-logo.png" alt ="Photoshop Logo">
+            <img src = "img/creative-cloud-logo.png" alt ="Creative Cloud Logo">
+          </li>
+        </ul>
+
+        <!-- paragraph about me-->
+        <p class = "about-info">
+          I am a university student at Carleton University
+          who is incredibly passionate about VFX and Technical
+          Direction. I have extensive knowledge in languages
+          such as Vex, C, C++ and Python, as well as some foundational
+          knowledge in HTML, CSS, JavaScript and Java. I dont wanna think
+          about anything else to say even though there's more stuff so here's
+          this hopefully that is good enough LOL.
+        </p>
+
+        <!-- Contact form container-->
+        <div class = "contact-form">
+
+          <!-- header for contact form-->
+          <h6>CONTACT ME</h6>
+          <form action="/server-page" method="post">
+            <ul class = "form-layout">
+
+              <!-- first section of form (NAME)-->
+              <li>
+                <label class = "label" for="fullname">Name:</label>
+                <input class = "input" type="text" id="fullname" name="fullname" placeholder="John Doe"/>
+              </li>
+
+              <!-- second section of form (EMAIL)-->
+              <li>
+                <label class = "label" for="email">Email:</label>
+                <input class = "input" type="email" id="email" name="email" placeholder="johndoe@emailadress.com"/>
+              </li>
+
+              <!-- third section of form (MESSAGE)-->
+              <li>
+                <label class = "label" for="message">Message:</label>
+                <textarea class = "input textarea" id="message" rows="4" placeholder = "Type Here:"></textarea>
+              </li>
+
+              <!-- fourth section of form (SUBMIT)-->
+              <li><button class = "submit-button" type="submit">Submit</button></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FOOTER CONTAINER-->
+    <footer>
+
+      <div>
+
+        <!--logo-->
+        <a id = "logofooter" href="#">
+          <img src = "img/my-logo.svg" alt = "Tarek Sallam">
+        </a>
+
+        <!-- footer links-->
+        <div class = "footer-links">
+          <a href="#">DEMO REEL</a>
+          <a href="#">EMAIL</a>
+        </div>
+
+        <!-- footer copyright-->
+        <p>&copy 2022 Tarek Sallam</p>
+      </div>
+
+    </footer>
+
   </body>
+  
 </html>
