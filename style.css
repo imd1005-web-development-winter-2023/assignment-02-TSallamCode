@@ -2,8 +2,8 @@ body {
   background-color: rgb(235, 217, 184);
   background-image: url("img/me.png");
   background-repeat: no-repeat;
-  background-size: 150%;
-  background-position: 37vw -3vw;
+  background-size: 80%;
+  background-position: 30vw 3vw;
 }
 
 .nav-bar {
@@ -272,4 +272,87 @@ p mark {
   margin-top: 16%;
   margin-left: 6%;
   margin-right: 19%;
+}
+
+.about-container {
+  display: grid;
+  grid-template-rows: 15vw 1fr;
+  margin-top: -28vw;
+  margin-left: 5vw;
+  grid-column: 1fr;
+}
+
+.about-container h5 {
+  grid-row: 1 / span 1;
+  color: white;
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+  font-size: 12vw;
+  letter-spacing: 2vw;
+}
+
+.profile-container{
+  margin-top: 5vw;
+  grid-row-start: 2;
+  display: grid;
+  grid-template-rows: 8vw 8w 8vw 20vw;
+  grid-template-columns: 24vw 30vw 1fr;
+  width: 100%;
+}
+
+.profile-container .photo {
+  margin-top: 3vw;
+  margin-left: 5vw;
+  width: 12vw;
+  height: 12vw;
+  object-fit: none;
+  object-position: -4.5vw 0vw;
+  scale: 150%;
+  border-radius: 100%;
+  grid-row: 1 /span 3;
+  grid-column: 1/ span 1;
+}
+
+.profile-container h6 {
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+  letter-spacing: 0.2vw;
+  grid-column: 2 / span 1;
+  color: black;
+}
+
+.about-title {
+  font-size: 5vw;
+  grid-row: 1 / span 1;
+}
+
+.about-msg {
+  margin-top: -2vw;
+  font-size: 3vw;
+  grid-row: 2 / span 1;
+}
+
+.logos {
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+}
+
+.logo-list {
+  display: flex;
+  gap: 2vw;
+  margin-left: -1.5vw;
+}
+
+.logo-list img {
+  height: 2.5vw;
+  opacity: 0.4;
+}
+
+.about-info {
+  margin-top: 4vw;
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 2;
+  font-family: "antonia-variable", sans-serif;
+  font-size: 2vw;
+  margin-top: 8vw;
+  margin-right: 10vw;
+  line-height: 200%;
 }
